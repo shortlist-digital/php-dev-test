@@ -6,7 +6,7 @@ and inject the placements for ads.
 
 ## How does it work?
 
-Our articles are divided in widgets. Each widget contain a `layout`. Examples of layouts
+Our articles are divided in widgets. Each widget contains a `layout`. Examples of layouts
 are: `paragraph`, `embed`, `related_articles`. You can find an article example in [src/Repository/Articles/1.json](src/Repository/Articles/1.json).
 This is a simplified version of a real article (https://www.stylist.co.uk/fitness-health/weighlifting-should-women-train-differently-to-men-weight-training-bodybuilding/356867)
 
@@ -34,7 +34,7 @@ This is exactly what this test is for, implement the Paragraph widget.
 ## What is the task?
 
 1. Implement the paragraph widget. Keep in mind the rules explained earlier, `1 point per 1000 characters`.
-2. In the [src/Ads/AdsInjector.php](src/Ads/AdsInjector.php) file, insert insert 1 ad every time the points counter reaches 3.5 points.
+2. In the [src/Ads/AdsInjector.php](src/Ads/AdsInjector.php) file, insert 1 ad every time the points counter reaches 3.5 points.
 
 If a paragraph widget contains 870 characters, it should count 0.87 points. If it contains 1423 characters, it should count 1.423 points and so on.
 
