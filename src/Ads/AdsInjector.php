@@ -16,16 +16,24 @@ class AdsInjector implements AdsInjectorInterface
 
 	public function inject(array $article) : array
 	{
+		$injected_article = array();
+		$ad = array("layout" => "ad");
+
 		if (!isset($article['widgets'])) {
 			return $article;
 		}
 
 		$points = 0;
-		foreach ($article['widgets'] as $widget) {
+		foreach ($article['widgets'] as $index => $widget) {
+			array_push($injected_article, $widget);
 			$class = $this->factory->create($widget['layout']);
 			$points += $class->getPointsValue($widget);
+			if ($points >= 3.5) {
+				$points = 0;
+				array_push($injected_article, $ad);
+			}
 		}
 
-		return $article;
+		return $injected_article;
 	}
 }
