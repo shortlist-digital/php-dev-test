@@ -16,7 +16,9 @@ The application will iterate through the widgets and count its *points*. Each wi
  - `related_articles`: 1 point
  - `paragraph`: 1 point per 1000 characters
 
-When it reaches 3.5 points, one ad widget should be placed. The ad widget should just have a `layout: ad` property.
+When it reaches 3.5 points or more, one ad widget should be placed and reset the points counter.
+
+The ad widget should just have a `layout: ad` property.
 
 ## How to run the app?
 
