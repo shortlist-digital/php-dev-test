@@ -6,6 +6,7 @@ use BackendApp\Ads\Widgets\WidgetFactory;
 
 class AdsInjector implements AdsInjectorInterface
 {
+	const POINTS = 3.5;
 	private $factory;
 
 	public function __construct()
@@ -19,15 +20,10 @@ class AdsInjector implements AdsInjectorInterface
 			return $article;
 		}
 
-		// if it gets to 3.5 points, it will render 1 ad
 		$points = 0;
 		foreach ($article['widgets'] as $widget) {
 			$class = $this->factory->create($widget['layout']);
 			$points += $class->getPointsValue($widget);
-
-			if ($points > 3.5) {
-				// oh yeah, lets inject 1 ad here!
-			}
 		}
 
 		return $article;
