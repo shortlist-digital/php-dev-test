@@ -1,0 +1,15 @@
+{
+    "name": "rdelazzari/php-dev-test",
+    "authors": [
+        {
+            "name": "Romulo De Lazzari",
+            "email": "romulodelazzari@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4": {
+        "BackendApp\\": "src/"
+      }
+    }
+}
