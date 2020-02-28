@@ -48,5 +48,4 @@ The ad widget should look like this in the JSON returned:
 
 ## Why this test?
 
-The purpose of this test is to verify your knowledge of Object oriented principles applied to php.
-
+The purpose of this test is to verify your knowledge of object oriented principles applied to php and how clean is the code. There is no deadline the test, so please do not rush and take your time.
