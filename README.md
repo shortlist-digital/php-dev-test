@@ -36,7 +36,7 @@ This is exactly what this test is for, implement the Paragraph widget.
 ## What is the task?
 
 1. Implement the paragraph widget. Keep in mind the rules explained earlier, `1 point per 1000 characters`.
-2. In the [src/Ads/AdsInjector.php](src/Ads/AdsInjector.php) file, insert 1 ad every time the points counter reaches 3.5 points.
+2. In the [src/Ads/AdsInjector.php](src/Ads/AdsInjector.php) file, insert 1 ad every time the points counter reaches 3.5 points or more.
 
 If a paragraph widget contains 870 characters, it should count 0.87 points. If it contains 1423 characters, it should count 1.423 points and so on.
 
