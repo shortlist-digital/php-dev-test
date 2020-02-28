@@ -1,9 +1,9 @@
 {
-    "name": "rdelazzari/php-dev-test",
+    "name": "shortlist-digital/php-dev-test",
     "authors": [
         {
             "name": "Romulo De Lazzari",
-            "email": "romulodelazzari@gmail.com"
+            "email": "romulodelazzari@stylist.co.uk"
         }
     ],
     "require": {},

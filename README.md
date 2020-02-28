@@ -16,7 +16,9 @@ The application will iterate through the widgets and count its *points*. Each wi
  - `related_articles`: 1 point
  - `paragraph`: 1 point per 1000 characters
 
-When it reaches 3.5 points, one ad widget should be placed. The ad widget should just have a `layout: ad` property.
+When it reaches 3.5 points or more, one ad widget should be placed and reset the points counter.
+
+The ad widget should just have a `layout: ad` property.
 
 ## How to run the app?
 
@@ -34,7 +36,7 @@ This is exactly what this test is for, implement the Paragraph widget.
 ## What is the task?
 
 1. Implement the paragraph widget. Keep in mind the rules explained earlier, `1 point per 1000 characters`.
-2. In the [src/Ads/AdsInjector.php](src/Ads/AdsInjector.php) file, insert 1 ad every time the points counter reaches 3.5 points.
+2. In the [src/Ads/AdsInjector.php](src/Ads/AdsInjector.php) file, insert 1 ad every time the points counter reaches 3.5 points or more.
 
 If a paragraph widget contains 870 characters, it should count 0.87 points. If it contains 1423 characters, it should count 1.423 points and so on.
 
@@ -48,5 +50,4 @@ The ad widget should look like this in the JSON returned:
 
 ## Why this test?
 
-The purpose of this test is to verify your knowledge of Object oriented principles applied to php.
-
+The purpose of this test is to verify your knowledge of object oriented principles applied to php and how clean is the code. There is no deadline the test, so please do not rush and take your time.
